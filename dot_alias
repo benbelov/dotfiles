@@ -1,2 +1,10 @@
-alias antibody-static-update="antibody bundle <  ~/.zsh_plugins > ~/.zsh_plugins.sh"
+# Update zsh plugins through Antibody
+alias antibody-update="antibody bundle <  ~/.zsh_plugins > ~/.zsh_plugins.sh"
+
+# chezmoi commands
+alias zshrc="chezmoi edit ~/.zshrc"
+alias zsh_plugins="chezmoi edit ~/.zsh_plugins"
+alias zsh_update="chezmoi apply && source ~/.zshrc"
+alias installed="rehash"
+alias zsh_alias="chezmoi edit ~/.alias"
 
