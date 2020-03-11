@@ -9,3 +9,14 @@ alias zsh_update="chezmoi apply && source ~/.zshrc"
 alias installed="rehash"
 alias zsh_alias="chezmoi edit ~/.alias"
 
+# ls
+alias ls="ls --color=auto"
+alias ll="ls -la"
+alias l.="ls -d .* --color=auto"
+
+# grep
+alias grep="grep --color=auto"
+
+# diff
+alias diff="code --diff"
+
