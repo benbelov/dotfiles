@@ -30,3 +30,6 @@ source ~/.zsh_plugins.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # eval `dircolors "$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-seebi-SLASH-dircolors-solarized/dircolors.ansi-dark"`
+
+# GCC
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'

@@ -11,12 +11,28 @@ alias zsh_alias="chezmoi edit ~/.alias"
 
 # ls
 alias ls="ls --color=auto"
-alias ll="ls -la"
-alias l.="ls -d .* --color=auto"
+alias l="ls -CF"
+alias la="ls -A"
+alias ll="ls -lFh"
+alias ldot="ls -d .*"
 
 # grep
 alias grep="grep --color=auto"
 
 # diff
 alias diff="code --diff"
+
+# find
+alias fd="find . -type d -name"
+alias ff="find . -type f -name"
+
+# cd
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# git
+
+# System
+alias uefi="systemctl reboot --firmware-setup"
 
