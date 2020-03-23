@@ -20,6 +20,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Default editor
+export EDITOR="/usr/bin/vim"
+
 # Add aliases
 source ~/.alias
 

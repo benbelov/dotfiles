@@ -36,3 +36,5 @@ alias .....="cd ../../../.."
 # System
 alias uefi="systemctl reboot --firmware-setup"
 
+# UT
+alias stampede2="ssh benbelov@stampede2.tacc.utexas.edu"
