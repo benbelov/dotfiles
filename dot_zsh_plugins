@@ -3,7 +3,7 @@ romkatv/powerlevel10k
 # seebi/dircolors-solarized
 
 # OMZ plugins
-wting/autojump
+wting/autojump path:bin
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
 robbyrussell/oh-my-zsh path:plugins/colored-man-pages
