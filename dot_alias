@@ -38,3 +38,13 @@ alias uefi="systemctl reboot --firmware-setup"
 
 # UT
 alias stampede2="ssh benbelov@stampede2.tacc.utexas.edu"
+
+# xdg-open
+alias open="xdg-open"
+
+# launch with light theme
+alias light="XDG_CONFIG_HOME=~/.kde-light"
+
+# AEC on-off
+alias aec-on="~/.scripts/enable_aec.sh"
+alias aec-off="~/.scripts/disable_aec.sh"

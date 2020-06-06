@@ -15,6 +15,7 @@ bindkey -v
 
 # Manual install of autojump, not handled by antibody above
 [[ -s /home/ben/.autojump/etc/profile.d/autojump.sh ]] && source /home/ben/.autojump/etc/profile.d/autojump.sh
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
 # autoload -U compinit && compinit -u
 
