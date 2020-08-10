@@ -48,3 +48,11 @@ alias light="XDG_CONFIG_HOME=~/.kde-light"
 # AEC on-off
 alias aec-on="~/.scripts/enable_aec.sh"
 alias aec-off="~/.scripts/disable_aec.sh"
+
+# KDE safe force shutdown, reboot
+# https://askubuntu.com/questions/1871/how-can-i-safely-shutdown-reboot-logout-kde-from-the-command-line
+# https://github.com/KDE/plasma-workspace/blob/fb30ea87e68407515f9be246426dc27ac2630934/libkworkspace/kworkspace.h
+alias kshutdown="qdbus org.kde.ksmserver /KSMServer logout 0 2 0"
+alias kreboot="qdbus org.kde.ksmserver /KSMServer logout 0 1 0"
+alias kforceshutdown="qdbus org.kde.ksmserver /KSMServer logout 0 2 2"
+alias kforcereboot="qdbus org.kde.ksmserver /KSMServer logout 0 1 2"
