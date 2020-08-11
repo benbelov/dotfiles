@@ -1,2 +1,5 @@
+! https://askubuntu.com/questions/93772/where-do-i-find-a-list-of-all-x-keysyms-these-days
+! https://www.apt-browse.org/browse/ubuntu/trusty/main/all/x11proto-core-dev/7.0.24-1/file/usr/include/X11/keysymdef.h
+! https://askubuntu.com/questions/877404/how-to-remap-xf86sleep-key-to-space-xmodmap-xkbcomp-udev-fail
 keycode 199 = F21 NoSymbol F21
 keycode 200 = F22 NoSymbol F22
