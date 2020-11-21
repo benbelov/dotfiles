@@ -44,3 +44,28 @@ typeset -g ZLE_RPROMPT_INDENT=0
 
 # GCC
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# ESP-IDF path
+export IDF_PATH='/home/ben/Documents/esp/esp-idf'
+
+# ZMK dev path
+export PATH=~/.local/bin:"$PATH"
+
+# ssh-agent startup
+function ssh-agent-start () {
+	if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+	    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+	fi
+	source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+}
+
+# gpg-agent setup for YubiKey auth
+function gpg-agent-start () {
+	export GPG_TTY="$(tty)"
+	export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+	if ! pgrep -u "$USER" gpg-agent > /dev/null; then
+		gpg-connect-agent updatestartuptty /bye >/dev/null
+	fi
+}
+gpg-agent-start
+

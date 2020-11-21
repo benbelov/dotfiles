@@ -56,3 +56,10 @@ alias kshutdown="qdbus org.kde.ksmserver /KSMServer logout 0 2 0"
 alias kreboot="qdbus org.kde.ksmserver /KSMServer logout 0 1 0"
 alias kforceshutdown="qdbus org.kde.ksmserver /KSMServer logout 0 2 2"
 alias kforcereboot="qdbus org.kde.ksmserver /KSMServer logout 0 1 2"
+
+# ESP IDF Aliases
+alias get_idf='source $HOME/Documents/esp/esp-idf/export.sh'
+
+# Generate YubiKey OATH codes
+alias oath='ykman oath code'
+
